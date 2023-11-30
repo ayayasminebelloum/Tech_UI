@@ -24,8 +24,12 @@ def display_schedule(day):
         "Thursday": [("Computer Graphics", "11:00 AM"), ("Software Engineering", "2:00 PM", "3:20 PM"), ("Machine Learning", "4:30 PM", "5:50 PM")],
         "Friday": [("Operating Systems", "9:00 AM"), ("Mobile App Development", "2:00 PM", "3:20 PM"), ("Cybersecurity", "4:30 PM", "5:50 PM")],
     }
+    
+    print(f"schedule_data[{day}]:", schedule_data[day])  # Add this line to print the content
+    
     schedule_df = pd.DataFrame(schedule_data[day], columns=["Class", "Time"])
     st.table(schedule_df)
+
 
 # Main function to create the app
 def main():
