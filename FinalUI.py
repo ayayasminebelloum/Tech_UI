@@ -131,7 +131,7 @@ def book_elevator_page():
         st.session_state.page = 2
 
 def availability_page():
-    image_path = "/Users/yasmine/tech_project/Second_stage/Elevator.jpeg"
+    image_path = "https://github.com/ayayasminebelloum/Tech_UI/blob/main/Elevator.jpeg?raw=true"
     st.image(image_path, use_column_width=True)
     st.title("Availability")
     
