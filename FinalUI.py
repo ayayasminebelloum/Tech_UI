@@ -13,7 +13,7 @@ if 'selected_class' not in st.session_state:
     st.session_state.selected_class = None
 
 def login_page():
-    image_path = "/Users/yasmine/tech_project/Second_stage/logo.png"
+    image_path = "https://github.com/ayayasminebelloum/Tech_UI/blob/main/Logo.png?raw=true"
     st.image(image_path, use_column_width=True)
     st.title("Welcome to SMART ELEVATORS")
     st.write("Welcome to SMART ELEVATORS! This tool has been designed to enhance the efficiency and convenience of your journey to class, making it a seamless and stress-free experience. Our application assists IE students in reserving a spot on an elevator headed to their designated floor. The process is straightforward – select your class, choose an available elevator, click book, and a QR code will be generated. This QR code serves as your virtual pass and is scanned upon entering the elevator, streamlining and optimizing your commute.")
@@ -23,7 +23,7 @@ def login_page():
         st.session_state.page = 2
 
 def schedule_page():
-    image_path = "/Users/yasmine/tech_project/Second_stage/schedule.jpeg"
+    image_path = "https://github.com/ayayasminebelloum/Tech_UI/blob/main/schedule.jpeg?raw=true"
     st.image(image_path, use_column_width=True)
     st.title("Your Schedule")
     schedule = {
@@ -43,7 +43,7 @@ def schedule_page():
         st.session_state.page = 2
 
 def options_page():
-    image_path = "/Users/yasmine/tech_project/Second_stage/Elevator.jpeg"
+    image_path = "https://github.com/ayayasminebelloum/Tech_UI/blob/main/Elevator.jpeg?raw=true"
     st.image(image_path, use_column_width=True)
     st.title("Options")
     
@@ -95,7 +95,7 @@ def generate_qr_code(data):
     return img_bytes
 
 def book_elevator_page():
-    image_path = "/Users/yasmine/tech_project/Second_stage/booking.jpeg"
+    image_path = "https://github.com/ayayasminebelloum/Tech_UI/blob/main/booking.jpeg?raw=true"
     st.image(image_path, use_column_width=True)
     st.title("Book Elevator")
     class_name, start_time, end_time, floor, room = st.session_state.selected_class
