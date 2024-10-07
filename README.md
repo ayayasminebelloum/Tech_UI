@@ -56,12 +56,3 @@ The program initializes two matrices `A` and `B` and multiplies them to get the 
 ## Output
 
 The result matrix `C` will be printed to the console after the computation, along with the time taken to perform the matrix multiplication.
-
-## Notes
-
-- Ensure you have the correct number of processes matching the size of your data.
-- The program can handle cases where the matrix rows are not evenly divisible by the number of processes.
-
----
-
-Feel free to adjust the details based on your project or specific environment.
